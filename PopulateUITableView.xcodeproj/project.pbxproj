@@ -13,7 +13,6 @@
 		106FB8AE1D19B20F007DBCD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106FB8AD1D19B20F007DBCD9 /* Assets.xcassets */; };
 		106FB8B11D19B20F007DBCD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106FB8AF1D19B20F007DBCD9 /* LaunchScreen.storyboard */; };
 		106FB8BD1D19B552007DBCD9 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106FB8BC1D19B552007DBCD9 /* TasksTableViewController.m */; };
-		106FB8C01D19B56E007DBCD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 106FB8BF1D19B56E007DBCD9 /* ViewController.m */; };
 		106FB8C61D19B7D9007DBCD9 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 106FB8C51D19B7D9007DBCD9 /* Task.m */; };
 		106FB8C91D19BD87007DBCD9 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 106FB8C81D19BD87007DBCD9 /* TaskTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -29,8 +28,6 @@
 		106FB8B21D19B20F007DBCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		106FB8BB1D19B552007DBCD9 /* TasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
 		106FB8BC1D19B552007DBCD9 /* TasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
-		106FB8BE1D19B56E007DBCD9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		106FB8BF1D19B56E007DBCD9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		106FB8C41D19B7D9007DBCD9 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		106FB8C51D19B7D9007DBCD9 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		106FB8C71D19BD87007DBCD9 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
@@ -69,8 +66,6 @@
 			children = (
 				106FB8A41D19B20F007DBCD9 /* AppDelegate.h */,
 				106FB8A51D19B20F007DBCD9 /* AppDelegate.m */,
-				106FB8BE1D19B56E007DBCD9 /* ViewController.h */,
-				106FB8BF1D19B56E007DBCD9 /* ViewController.m */,
 				106FB8BB1D19B552007DBCD9 /* TasksTableViewController.h */,
 				106FB8BC1D19B552007DBCD9 /* TasksTableViewController.m */,
 				106FB8C71D19BD87007DBCD9 /* TaskTableViewCell.h */,
@@ -168,7 +163,6 @@
 				106FB8A61D19B20F007DBCD9 /* AppDelegate.m in Sources */,
 				106FB8C91D19BD87007DBCD9 /* TaskTableViewCell.m in Sources */,
 				106FB8BD1D19B552007DBCD9 /* TasksTableViewController.m in Sources */,
-				106FB8C01D19B56E007DBCD9 /* ViewController.m in Sources */,
 				106FB8A31D19B20F007DBCD9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
