@@ -9,9 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TaskTableViewCell : UITableViewCell
-{
-
-
-}
 
 @end

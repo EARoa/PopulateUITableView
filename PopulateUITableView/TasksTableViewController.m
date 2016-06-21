@@ -17,7 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _someTasks = [NSMutableArray arrayWithObjects:@"Get Coffee",@"Clean room",@"Wake Bryan up",@"Finish Homework", nil];
+    _someTasks = [NSMutableArray array];
+    
+    Task *firstTask = [[Task alloc] init];
+    firstTask.title = @"Wash the car";
+    
+    [_someTasks addObject:firstTask];
+    
+    
+    
+    //_someTasks = [NSMutableArray arrayWithObjects:@"Get Coffee",@"Clean room",@"Wake Bryan up",@"Finish Homework", nil];
 
 }
 
@@ -40,9 +49,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskTableViewCell" forIndexPath:indexPath];
-
-    NSString *name =  _someTasks[indexPath.row];
-    cell.textLabel.text = name;
+    
+    
+//    NSString *name =  _someTasks[indexPath.row];
+//    cell.textLabel.text = name;
+    
+    NSMutableArray *myArray = _someTasks[indexPath.row];
+    NSLog(@"My array: %@", myArray);
+    
+    
+//    cell.textLabel.text = [NSMutableString stringWithFormat:@"%@", [myArray replacementObjectForKeyedArchiver:@"keyname"] ];
     
     return cell;
 }

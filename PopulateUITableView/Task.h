@@ -9,15 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface Task : NSObject
-
 {
     
-    NSString *title;
     
 }
 
 
-@property (nonatomic, weak) NSString* title;
+@property (nonatomic, copy) NSString* title;
 
 
 @end
