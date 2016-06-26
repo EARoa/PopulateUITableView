@@ -15,7 +15,8 @@
 }
 
 
-@property (nonatomic, copy) NSString* title;
+@property (nonatomic, copy) NSString *title;
+- (instancetype) initWithTitle: (NSString *) title;
 
 
 @end

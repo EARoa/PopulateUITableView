@@ -17,17 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    _someTasks = [NSMutableArray array];
+//    Task *firstTask = [[Task alloc] init];
+//    firstTask.title = @"Wash the car";
+//    [_someTasks addObject:firstTask];
+//    _someTasks = [NSMutableArray arrayWithObjects:@"Get Coffee",@"Clean room",@"Wake Bryan up",@"Finish Homework", nil];
+    
+    
+    
     _someTasks = [NSMutableArray array];
-    
-    Task *firstTask = [[Task alloc] init];
-    firstTask.title = @"Wash the car";
-    
-    [_someTasks addObject:firstTask];
-    
-    
-    
-    //_someTasks = [NSMutableArray arrayWithObjects:@"Get Coffee",@"Clean room",@"Wake Bryan up",@"Finish Homework", nil];
-
+    Task *firstTask = [[Task alloc]initWithTitle:@"Get Coffee"];
+    Task *secondTask = [[Task alloc]initWithTitle:@"Bother Bryan"];
+    Task *thirdTask = [[Task alloc]initWithTitle:@"Finish Homework"];
+    Task *fourthTask = [[Task alloc]initWithTitle:@"Go To Work"];
+    Task *fifthTask = [[Task alloc]initWithTitle:@"Go To Sleep"];
+    _someTasks = [[NSMutableArray alloc]initWithArray:@[firstTask.title, secondTask.title, thirdTask.title, fourthTask.title, fifthTask.title]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,14 +55,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskTableViewCell" forIndexPath:indexPath];
     
     
-//    NSString *name =  _someTasks[indexPath.row];
-//    cell.textLabel.text = name;
+    NSString *name =  _someTasks[indexPath.row];
+    cell.textLabel.text = name;
     
-    NSMutableArray *myArray = _someTasks[indexPath.row];
-    NSLog(@"My array: %@", myArray);
-    
-    
-//    cell.textLabel.text = [NSMutableString stringWithFormat:@"%@", [myArray replacementObjectForKeyedArchiver:@"keyname"] ];
     
     return cell;
 }
